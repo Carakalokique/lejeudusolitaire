@@ -14,6 +14,9 @@ body,
 }
 
 .solitaire {
+  display: flex;
+  flex-direction: column; /* Align children vertically */
+  justify-content: space-between; /* This will push the button to the bottom */
   min-height: 100%;
   overflow: auto;
   flex: 1 0 auto;
@@ -166,6 +169,7 @@ button {
   font-family: "Pixelated MS Sans Serif", "Arial", sans-serif;
   font-size: 16px;
   cursor: pointer;
+  align-content: center;
 }
 
 button:active {
@@ -213,4 +217,12 @@ p {
   max-width: 70%; /* Max width of the content area, adjust as needed */
   padding: 1rem; /* Padding inside the content area */
   /* Additional styles */
+}
+
+.game-actions {
+  display: flex; /* Use flexbox to align children */
+  justify-content: center; /* Center button horizontally */
+  align-items: center; /* Center button vertically if needed */
+  margin-top: auto; /* Pushes the game-actions to the bottom */
+  padding-bottom: 5rem; /* Optional: adds space below the button */
 }
