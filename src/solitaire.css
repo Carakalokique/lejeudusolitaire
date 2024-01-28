@@ -10,14 +10,14 @@ html,
 body,
 .solitaire,
 .size-limit {
-  display: flex;
-  flex: 1;
   flex-direction: column;
 }
 
 .solitaire {
+  min-height: 100%;
+  overflow: auto;
+  flex: 1 0 auto;
   width: 100%;
-  height: 100%;
   box-sizing: border-box;
   background-color: green;
   position: relative;
@@ -136,4 +136,81 @@ body,
 .finish-dest {
   box-shadow: 0 0 0 1px #03ffff;
   border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .size-limit {
+    margin-top: 0.5rem; /* Even smaller margin for mobile devices */
+  }
+
+  .content {
+    margin: 2em 5em;
+    font-size: 2em;
+    overflow: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .content {
+    margin: 2em 1em;
+    overflow: auto;
+  }
+}
+
+/* Windows 98 style button */
+button {
+  background-color: #0a64a0;
+  color: white;
+  border: 1px outset #ffffff;
+  padding: 4px 15px;
+  font-family: "Pixelated MS Sans Serif", "Arial", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:active {
+  border-style: inset;
+}
+
+/* Windows 98 style headings */
+h1,
+h2,
+h3 {
+  font-family: "MS Sans Serif", Geneva, sans-serif;
+  color: #000000;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2em; /* 32px */
+}
+
+h2 {
+  font-size: 1.5em; /* 24px */
+}
+
+h3 {
+  font-size: 1.17em; /* 18px */
+}
+
+/* Windows 98 style paragraph */
+p {
+  font-family: "MS Sans Serif", Geneva, sans-serif;
+  font-size: 16px;
+  color: #000000;
+}
+
+/* Apply Windows 98 style borders for a container or div */
+.div-border {
+  border: 2px outset #ffffff;
+  background-color: #c0c0c0;
+  padding: 8px;
+}
+
+.content {
+  margin-left: auto; /* Center content horizontally */
+  margin-right: auto;
+  max-width: 70%; /* Max width of the content area, adjust as needed */
+  padding: 1rem; /* Padding inside the content area */
+  /* Additional styles */
 }
