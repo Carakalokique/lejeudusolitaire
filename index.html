@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      href="../../images/icons/solitaire-32x32.png"
+      type="image/png"
+    />
+    <link href="src/solitaire.css" rel="stylesheet" type="text/css" />
+    <title>Le Jeu du Solitaire en Ligne et Gratuit</title>
+  </head>
+  <body>
+    <!-- Title for the page -->
+    <h1>Le Jeu du Solitaire</h1>
+
+    <div class="solitaire inset-deep" id="js-solitaire">
+      <div class="size-limit">
+        <div class="upper" id="js-upper">
+          <div id="js-deck-pile" class="deck__pile upper__spacer"></div>
+          <div id="js-deck-deal" class="deck__deal upper__spacer"></div>
+          <div class="upper__spacer"></div>
+        </div>
+        <div id="js-board" class="board-deck"></div>
+      </div>
+      <div class="game-actions">
+        <button id="new-game">Deal a New Game</button>
+      </div>
+    </div>
+    <!-- Additional content section -->
+    <div class="additional-content">
+      <h2>Le klondike</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+      <h2>Le klondike</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
