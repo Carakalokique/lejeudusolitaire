@@ -647,9 +647,9 @@ const win = () => {
     }
     canvas.parentNode.removeChild(canvas);
     document.removeEventListener("click", removeAnimation);
+    resetGame();
   }
   document.addEventListener("click", removeAnimation, false);
-  resetGame();
 };
 
 function initSolitaire() {
